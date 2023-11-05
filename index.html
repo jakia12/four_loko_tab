@@ -95,75 +95,71 @@
     </section>
     <section class="tab_sec">
       <div class="container">
-        <div class="modal_box">
-          <div class="tabs">
-            <ul class="tab-links">
-              <li class="active"><a href="#tab1"> What is Four Loko</a></li>
-              <li><a href="#tab2">Disclaimer</a></li>
-              <li><a href="#tab3">Holder</a></li>
-            </ul>
+        <h2 class="abt_title text-center" style="font-size: 30px">
+          What is Four Loko
+        </h2>
+        <div class="modal_box" id="myBox">
+          <p>
+            Four Loko was created by 3 Ohio State fraternity bros who loved Red
+            Bull Vodka. In 2008, the 3 friends created this magnificent chad of
+            a drink, equivalent to 4-6 beers, an espresso shot, and a Red
+            Bull.Grab a Four Loko from your local nuclear power plant and join
+            us on this speed run to $100m.Join Community
+          </p>
 
-            <div class="tab-content" id="tab1">
-                <p>
-                Four Loko was created by 3 Ohio State fraternity bros who loved
-                Red Bull Vodka. In 2008, the 3 friends created this magnificent
-                chad of a drink, equivalent to 4-6 beers, an espresso shot, and
-                a Red Bull.Grab a Four Loko from your local nuclear power plant
-                and join us on this speed run to $100m.Join Community
-              </p>
-
-              <a href="#">Join Community</a></div>
-            </div>
-            <div class="tab-content" id="tab2">
-                 <p>
-                Four Loko was created by 3 Ohio State fraternity bros who loved
-                Red Bull Vodka. In 2008, the 3 friends created this magnificent
-                chad of a drink, equivalent to 4-6 beers, an espresso shot, and
-                a Red Bull.Grab a Four Loko from your local nuclear power plant
-                and join us on this speed run to $100m.Join Community
-              </p>
-              <p>
-                The $LOKO token is not in any way affiliated with the Four Loko
-                beverage or any associated subsidiaries. This token is simply
-                paying homage to a popular beverage from the 2010s.
-              </p>
-              <p>
-                The Four Loko token is a memecoin created by the people, for
-                entertainment purposes only.
-              </p>
-              <p>
-                $LOKO tokens are fundamentally valueless digital assets residing
-                on the Ethereum blockchain. They are not backed by any
-                commodity, security, or currency, and they have no intrinsic
-                value. Their worth (or lack thereof) is purely speculative and
-                subject to market risks, including complete loss of value.
-              </p>
-              <p>
-                Holding or interacting with LOKO tokens does not grant you any
-                rights or claims, expressed or implied, to any form of
-                compensation, reimbursement, governance, or control within the
-                SPX community or project. The tokens do not confer upon the
-                holder any ownership rights, profit-sharing rights, voting
-                rights, or any other rights commonly associated with financial
-                assets.
-              </p>
-
-            </div>
-            <div class="tab-content" id="tab3"><canvas id="myLineChart"></canvas></div>
-          </div>
+          <a href="#">Join Community</a>
         </div>
 
-         <p
-              style="
-                color: #000;
-                font-size: 21px;
-                margin: 30px 0 30px;
-                font-family: Roboto Mono, monospace;
-                text-align: center;
-              "
-            >
-              © 2023! Four Loko . All rights reserved.
-            </p>
+        <div
+          class="modal_box"
+          style="position: relative; padding-top: 80px; margin-top: 40px"
+          id="disclaimer"
+        >
+          <button class="dis_btn">Disclaimer!</button>
+          <p>
+            Four Loko was created by 3 Ohio State fraternity bros who loved Red
+            Bull Vodka. In 2008, the 3 friends created this magnificent chad of
+            a drink, equivalent to 4-6 beers, an espresso shot, and a Red
+            Bull.Grab a Four Loko from your local nuclear power plant and join
+            us on this speed run to $100m.Join Community
+          </p>
+          <p>
+            The $LOKO token is not in any way affiliated with the Four Loko
+            beverage or any associated subsidiaries. This token is simply paying
+            homage to a popular beverage from the 2010s.
+          </p>
+          <p>
+            The Four Loko token is a memecoin created by the people, for
+            entertainment purposes only.
+          </p>
+          <p>
+            $LOKO tokens are fundamentally valueless digital assets residing on
+            the Ethereum blockchain. They are not backed by any commodity,
+            security, or currency, and they have no intrinsic value. Their worth
+            (or lack thereof) is purely speculative and subject to market risks,
+            including complete loss of value.
+          </p>
+          <p>
+            Holding or interacting with LOKO tokens does not grant you any
+            rights or claims, expressed or implied, to any form of compensation,
+            reimbursement, governance, or control within the SPX community or
+            project. The tokens do not confer upon the holder any ownership
+            rights, profit-sharing rights, voting rights, or any other rights
+            commonly associated with financial assets.
+          </p>
+        </div>
+
+        <p
+          style="
+            color: #000;
+            font-size: 21px;
+            margin: 30px 0 30px;
+            font-family: Roboto Mono, monospace;
+            text-align: center;
+          "
+        >
+          © 2023! Four Loko . All rights reserved.
+        </p>
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -210,58 +206,89 @@
         $(".tab-links li:first").click();
       });
 
-    //   chart js
-     // Get a reference to the canvas element
-  var ctx = document.getElementById('myLineChart').getContext('2d');
+      //   chart js
+      // Get a reference to the canvas element
+      var ctx = document.getElementById("myLineChart").getContext("2d");
 
-  // Define your data
-var data = {
-    labels: ['August', 'September', 'October', 'November', 'December'],
-    datasets: [
-      {
-        label: 'Holder Data',
-        data: [0, 25, 12, 32, 18],
-        borderColor: 'blue',
-        backgroundColor:"white",
-        fill: false,
-      },
-    ],
-  };
+      // Define your data
+      var data = {
+        labels: ["August", "September", "October", "November", "December"],
+        datasets: [
+          {
+            label: "Holder Data",
+            data: [0, 25, 12, 32, 18],
+            borderColor: "blue",
+            backgroundColor: "white",
+            fill: false,
+          },
+        ],
+      };
 
-  // Configure the chart
-  var options = {
-    responsive: true,
-    maintainAspectRatio: false,
-    tooltips: {
+      // Configure the chart
+      var options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        tooltips: {
           plugins: {
             tooltip: {
-                callbacks: {
-                    labelColor: function(context) {
-                        return {
-                            borderColor: 'rgb(0, 0, 255)',
-                            backgroundColor: 'white',
-                            borderWidth: 2,
-                            borderDash: [2, 2],
-                            borderRadius: 2,
-                        };
-                    },
-                    labelTextColor: function(context) {
-                        return '#543453';
-                    }
-                }
-            }
-        }
-    },
-    
-  };
+              callbacks: {
+                labelColor: function (context) {
+                  return {
+                    borderColor: "rgb(0, 0, 255)",
+                    backgroundColor: "white",
+                    borderWidth: 2,
+                    borderDash: [2, 2],
+                    borderRadius: 2,
+                  };
+                },
+                labelTextColor: function (context) {
+                  return "#543453";
+                },
+              },
+            },
+          },
+        },
+      };
 
-  
-  // Create the line chart
-  var myLineChart = new Chart(ctx, {
-    type: 'line',
-    data: data,
-    options: options,
-  });
+      // Create the line chart
+      var myLineChart = new Chart(ctx, {
+        type: "line",
+        data: data,
+        options: options,
+      });
+
+      //draggable modal
+      //   const draggableElement = document.getElementById('myBox');
+
+      // // Variables to store the position of the mouse and the element
+      // let offsetX, offsetY;
+      // let isDragging = false;
+
+      // // Event listener for when the drag starts
+      // draggableElement.addEventListener('dragstart', (e) => {
+      //     e.dataTransfer.setData('text/plain', ''); // Required for Firefox to enable dragging
+      //     offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
+      //     offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+      //     isDragging = true;
+      //     draggableElement.style.opacity = '0.5';
+      // });
+
+      // // Event listener for when the element is being dragged
+      // document.addEventListener('mousemove', (e) => {
+      //     if (!isDragging) return;
+
+      //     const x = e.clientX - offsetX;
+      //     const y = e.clientY - offsetY;
+
+      //     draggableElement.style.left = x + 'px';
+      //     draggableElement.style.top = y + 'px';
+      // });
+
+      // // Event listener for when the drag ends
+      // document.addEventListener('mouseup', () => {
+      //     isDragging = false;
+      //     draggableElement.style.opacity = '1';
+      // });
     </script>
   </body>
 </html>

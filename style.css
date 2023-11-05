@@ -24,7 +24,7 @@ html {
   padding-left: 0 !important;
 }
 .ban_img {
-  width: 208px;
+  width: 300px;
 }
 
 .pos_1 {
@@ -147,7 +147,7 @@ button.dis_btn {
 
 .modal_box {
   width: 800px;
-  background: #333;
+  background: #000;
   color: #fff;
   text-align: center;
   padding: 40px 29px;
@@ -212,13 +212,12 @@ button.dis_btn {
 .modal_box {
   max-width: 739px;
   width: 100%;
-  background: #333;
+  background: #000;
   color: #fff;
   text-align: center;
-  padding: 40px 9px;
+  padding: 40px 15px;
   border-radius: 8px;
   margin: 0 auto;
-  height: 600px;
 }
 .tab-content.active {
   display: block;
@@ -240,6 +239,22 @@ button.dis_btn {
   font-size: 18px;
 }
 
+.pos_2 {
+  position: absolute;
+  left: -77%;
+  top: -2%;
+}
+.pos_4 {
+  position: absolute;
+  left: -55%;
+}
+
+.pos_3 {
+  position: absolute;
+  left: -53%;
+  top: 62%;
+  z-index: 1;
+}
 @media screen and (max-width: 768px) {
   .tab-links li a {
     margin-top: 12px;

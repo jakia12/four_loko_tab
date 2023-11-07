@@ -2,15 +2,18 @@
 
 body {
   font-family: "Roboto Mono", monospace;
+  position: relative;
 }
 body,
 html {
   overflow-x: hidden;
 }
-
+.banner_section {
+  padding-top: 250px;
+}
 .banner_sec,
 .tab_sec {
-  padding: 100px 0;
+  padding: 50px 0;
   background-image: linear-gradient(#7f70b3ab, #7f70b3af), url(/images/bg.png);
 
   background-size: cover;
@@ -26,7 +29,21 @@ html {
 .ban_img {
   width: 300px;
 }
-
+.pos_6 {
+  position: absolute;
+  left: -48%;
+  top: -263px;
+  z-index: 2;
+}
+.pos_7 {
+  position: absolute;
+  top: -47%;
+  width: 140px;
+  transform: rotate(51deg);
+  z-index: 1;
+  left: 115%;
+  margin-left: 0;
+}
 .pos_1 {
   position: absolute;
   left: -121%;
@@ -99,7 +116,16 @@ button.dis_btn {
   left: 0;
   top: 0;
 }
-
+.btn_section {
+  padding: 250px 0 0;
+}
+.modal_btn {
+  background: #d9d9d9;
+  padding: 14px 30px;
+  border-radius: 8px;
+  color: #000;
+  margin-bottom: 30px;
+}
 .ca_txt {
   font-family: Raleway, sans-serif;
   margin-bottom: 60px;
@@ -123,6 +149,7 @@ button.dis_btn {
   padding: 9px 23px;
   border-radius: 5px;
   font-size: 16px;
+  margin-top: 0;
 }
 .elementor-11 .elementor-element.elementor-element-19fb95e::before {
   background-image: none !important;
@@ -210,14 +237,11 @@ button.dis_btn {
   width: 490px;
 }
 .modal_box {
-  max-width: 739px;
-  width: 100%;
   background: #000;
   color: #fff;
-  text-align: center;
+  border: 1px solid #f7f7f7;
   padding: 40px 15px;
   border-radius: 8px;
-  margin: 0 auto;
 }
 .tab-content.active {
   display: block;
@@ -255,7 +279,86 @@ button.dis_btn {
   top: 62%;
   z-index: 1;
 }
+
+/*******modified css********/
+button.dis_btn {
+  background: #d9d9d9;
+  padding: 12px 39px;
+  border-radius: 8px;
+  color: #000;
+  position: absolute;
+  left: -15px;
+  top: -22px;
+  font-size: 15px;
+}
+
+/****modal design***/
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop_up {
+  position: absolute;
+  top: 15%;
+  left: 31%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  z-index: 1050;
+  display: none;
+  width: 44%;
+
+  /* overflow: hidden; */
+  outline: 0;
+}
+.close {
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  float: right;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff !important;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  right: 16px;
+}
+
+.drag_btn {
+  cursor: move !important;
+}
+/* responsive css */
+
 @media screen and (max-width: 768px) {
+  .banner_section {
+    padding-top: 0;
+  }
+  .btn_section {
+    padding: 50px 0 0;
+  }
+
+  .social_btn {
+    margin-top: 12px;
+  }
+  .pop_up {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 95%;
+  }
   .tab-links li a {
     margin-top: 12px;
   }
@@ -290,6 +393,16 @@ button.dis_btn {
   .pos_5 {
     position: static;
   }
+
+  .pos_6 {
+    position: static;
+  }
+  .pos_7 {
+    position: static;
+    width: 150px;
+    transform: rotate(30deg);
+    margin-left: 40px;
+  }
   .mid_logo {
     width: 336px;
     margin-left: 20px;
@@ -311,3 +424,42 @@ button.dis_btn {
     margin-right: 100px;
   }
 }
+
+/**********draggable button**********/
+.draggable-box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  position: absolute;
+  z-index: 9999;
+}
+
+.draggable-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+*/ .draggable {
+  z-index: 1060;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: black;
+}
+/* 
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196f3;
+  color: #fff;
+} */

@@ -13,7 +13,7 @@ html {
 }
 .banner_sec,
 .tab_sec {
-  padding: 50px 0;
+  padding: 50px 0 10px;
   background-image: linear-gradient(#7f70b3ab, #7f70b3af), url(/images/bg.png);
 
   background-size: cover;
@@ -117,7 +117,7 @@ button.dis_btn {
   top: 0;
 }
 .btn_section {
-  padding: 250px 0 0;
+  padding: 230px 0 0;
 }
 .modal_btn {
   background: #d9d9d9;
